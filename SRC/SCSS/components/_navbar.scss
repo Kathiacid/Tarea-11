@@ -1,0 +1,28 @@
+@import "../base/reset.css";
+@import "../utils/variables";
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    background-color: $yellow-pastel;
+    box-shadow: -1px -1px 6px 0 rgb(0, 0, 0);
+
+
+    &__logo{
+        color:$pink-primary
+    }
+
+    &__main-section{
+        color: $green;
+        display: flex;
+        gap: 200px;
+    }
+
+    &__logo{
+        color: $pink-primary;
+    }
+}
+
+

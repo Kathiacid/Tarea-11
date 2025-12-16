@@ -1,0 +1,25 @@
+@import "../base/reset.css";
+@import "./base/reset.css";
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+  background-color: #F3EAD8;
+  box-shadow: -1px -1px 6px 0 rgb(0, 0, 0);
+}
+.nav__logo {
+  color: #F297A0;
+}
+.nav__main-section {
+  color: #B6BB79;
+  display: flex;
+  gap: 200px;
+}
+.nav__logo {
+  color: #F297A0;
+}
+
+.header {
+  background-color: #F297A0;
+}/*# sourceMappingURL=main.css.map */
