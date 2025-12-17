@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KARIA: Tienda de moda de lujo accesible. Bolsos, zapatos y accesorios seleccionados para potenciar tu elegancia.">
     <link rel="stylesheet" href="../SRC/SCSS/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Vanilla Cloud</title>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>KARIA | Luxury Fashion</title>
 </head>
 
 <body>
@@ -15,125 +16,165 @@
             <span class="nav__logo">KARIA</span>
         </div>
         <ul class="nav__main-section">
-            <li>Catalogo</li>
-            <li>En vivo</li>
-            <li>Donde encontrarnos</li>
+            <li>Colecciones</li>
+            <li href="#">Live Shopping</li>
+            <li>Showroom</li>
         </ul>
         <div class="nav__login-section">
             <div class="nav__login">
-                <span class="material-symbols-outlined nav__logo">
-                    login
-                </span>
+                <span class="material-symbols-outlined nav__login-icon">login</span>
             </div>
         </div>
     </nav>
 
     <header class="header">
-        <div class="header__live">
-            <video width="640" height="360" controls poster="portada-video.jpg">
-                <source class="header__video" src="video-producto.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
-            <span class="header__badge">🟢LIVE</span>
+        <div class="header__settings">
+            <div class="header__live">
+                <iframe 
+                    class="header__video" 
+                    width="700" 
+                    height="394" 
+                    src="https://www.youtube.com/embed/YpRHE0t6aaU?si=U2R8f4s1PbPPM2Su&controls=0&autoplay=1&mute=1&loop=1&playlist=YpRHE0t6aaU" 
+                    title="KARIA Live Runway" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+                <span class="badge__text">🟢 LIVE</span>
+            </div>
         </div>
-        <h1 class="header__title">KARIA</h1>
-        <p class="header__info">Sabemos lo importante que es para ti encontrar ese accesorio perfecto que complete tu look. En nuestra tienda, unimos lo mejor de dos mundos: tendencias de alta moda y precios justos, para que renovar tu armario sea siempre una experiencia placentera y libre de culpa. Aquí encontrarás ese toque de glamour que buscas, al valor que te mereces.</p>
-        <a class="btn btn--solid">Empezar el glamour</a>
+
+        <div class="header__text">
+            <h1 class="header__title">Redefine tu <br><i>Esencia</i></h1>
+            <p class="header__info">
+                Donde la alta costura se encuentra con la realidad. Fusionamos tendencias globales con precios conscientes, creando una experiencia de compra donde el lujo deja de ser un sueño para convertirse en tu estándar diario.
+            </p>
+            <a href="#" class="btn btn--solid">Explorar Colección</a>
+        </div>
     </header>
 
     <main>
         <section class="productos">
-            <p class="preductos__mini-title">Productos</p>
-            <h class="productos__titulo">Potencia tu elegancia</h2>
             <div class="catalogo">
-                <article class="catalogo__card ">
-                <img class="catalogo__img">
-                <div class="catalogo__overlay">
-                    <span class="material-symbols-outlined catalogo__icon">
-                    trip
-                    </span>
-                    <h3 class="catalogo__name">Bolsos</h3>
-                    <p class="catalogo__subtitle">
-                        Más que un complemento, el protagonista de tu atuendo. Funcionalidad y estilo en cada costura
-                    </p>
-                </div>
-            </article>
+                <article class="catalogo__card">
+                    <img class="catalogo__img" src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-nano-madeleine--M27043_PM2_Front%20view.jpg" alt="Bolso de lujo negro"> 
+                    <div class="catalogo__overlay">
+                        <span class="material-symbols-outlined catalogo__icon">shopping_bag</span>
+                        <h3 class="catalogo__name">Handbags & Totes</h3>
+                        <p class="catalogo__subtitle">
+                            Piezas arquitectónicas que cargan tu mundo con elegancia.
+                        </p>
+                    </div>
+                </article>
 
-            <article class="catalogo__card ">
-                <img class="catalogo__img">
-                <div class="catalogo__overlay">
-                    <span class="material-symbols-outlined catalogo__icon">
-                    trip
-                    </span>
-                    <h3 class="catalogo__name">Zapatos</h3>
-                    <p class="catalogo__subtitle">
-                        Camina con confianza. Diseños que fusionan confort y estética para acompañar tus pasos más importantes.
-                    </p>
-                </div>
-            </article>
+                <article class="catalogo__card">
+                    <img class="catalogo__img" src="https://media.falabella.com/falabellaCL/136569980_01/w=800,h=800,fit=pad" alt="Tacones de diseño">
+                    <div class="catalogo__overlay">
+                        <span class="material-symbols-outlined catalogo__icon">steps</span>
+                        <h3 class="catalogo__name">Footwear de Autor</h3>
+                        <p class="catalogo__subtitle">
+                            Diseños que elevan tu postura y tu confianza en cada paso.
+                        </p>
+                    </div>
+                </article>
 
-            </article>
-            <article class="catalogo__card">
-                <img class="catalogo__img">
-                <div class="catalogo__overlay">
-                    <span class="material-symbols-outlined">
-                    aod_watch
-                    </span>
-                    <h3 class="catalogo__name">Accesorios</h3>
-                    <p class="catalogo__subtitle">
-                        El secreto está en los detalles. Pequeñas piezas cargadas de personalidad para iluminar tu esencia
-                    </p>
-                </div>
-            </article>
+                <article class="catalogo__card">
+                    <img class="catalogo__img" src="https://m.media-amazon.com/images/I/61vO-h7JAJL.jpg" alt="Reloj y joyas doradas">
+                    <div class="catalogo__overlay">
+                        <span class="material-symbols-outlined">diamond</span>
+                        <h3 class="catalogo__name">Joyería Statement</h3>
+                        <p class="catalogo__subtitle">
+                            El destello final. Detalles curados para iluminar tu presencia.
+                        </p>
+                    </div>
+                </article>
+                
             </div>
-            <div class="promocion">
-                <h2 class="promocion__title">Promoción de <i>Navidad</i></h2>
-                <h3 class="promocion__subtitle">15% de descuento</h3>
-                <p class="promocion__subsubtitle"> Valido en toda la tienda</p>
-                <p class="promocion__text">Solo productos seleccionados previamente por el vendedor, para más informacion consultar a los vendedores</p>
-                <a class="bt btn--solid">Comprar</a>
-            </div>
-            
-        <section class="propaganda">
-            <h2 class="propaganda__title">Siguenos en nuestras redes sociales</h2>
-                <p class="propaganda__text">Contamos con una gran comunidad a lo largo de todo el pais, desde el año 2020 en plena pandemía, año en el cual decidimos comenzar con la venta de productos glamurosos. </p>
-            <article class="socials">
-                <div class="socilas__card">
-                    <h3 class="socials__numbre">+ 1M</h3>
-                    <p class="socials__name">En Instagram</p>
+
+            <aside class="promocion">
+                <div class="promocion__card">
+                    <h2 class="promocion__title">KARIA <i>Member</i></h2>
+                    <h3 class="promocion__subtitle">15% OFF</h3>
+                    <p class="promocion__subsubtitle"><i>Tu bienvenida al club</i></p>
+                    <p class="promocion__text">Acceso anticipado a colecciones exclusivas y descuentos en tu primera compra.</p>
+                    <a href="#" class="btn btn--solid">Reclamar Beneficio</a>
                 </div>
-                <div class="socilas__card">
-                    <h3 class="socials__numbre">+ 5M</h3>
-                    <p class="socials__name">En Tiktok</p>
-                </div>
-                <div class="socilas__card">
-                    <h3 class="socials__numbre">+ 500K</h3>
-                    <p class="socials__name">En X </p>
+            </aside>
+        </section>
+
+        <section class="wrapper">
+            <article class="img">
+                <img class="img__img" src="https://media.istockphoto.com/id/1394033419/es/foto/frente-a-una-tienda-de-moda-de-lujo-en-un-moderno-centro-comercial.jpg?s=612x612&w=0&k=20&c=UcSAQRWtJEJi5XCaBQg_89u2FJe4OCjdKvGnzZkUukA=" alt="Fachada tienda Karia">
+            </article>
+            <article class="propaganda">
+                <h2 class="propaganda__title">Únete al Universo KARIA</h2>
+                <p class="propaganda__text">Desde 2020, hemos construido más que una marca: una comunidad de amantes de la moda que no temen brillar. Sé parte de la conversación.</p>
+                
+                <div class="socials">
+                    <div class="socials__card"> 
+                        <h3 class="socials__numbre">1M+</h3>
+                        <p class="socials__name">Musas en IG</p>
+                    </div>
+                    <div class="socials__card">
+                        <h3 class="socials__numbre">5M+</h3>
+                        <p class="socials__name">Vistas en TikTok</p>
+                    </div>
+                    <div class="socials__card">
+                        <h3 class="socials__numbre">Global</h3>
+                        <p class="socials__name">Envíos</p>
+                    </div>
                 </div>
             </article>
         </section>
-        <section class="comments">
-            <h2 class="comments__title">Opiniones sobre nosotros</h2>
-            <div class="opinions">
-                <span class="material-symbols-outlined" class="comments__icon">
-                    format_quote
-                </span>
-                <p class="comments__Text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ea eveniet accusamus. Ratione minima cupiditate, id, voluptas quibusdam rerum fugit dignissimos distinctio ea illo iure quas repudiandae sunt temporibus similique.
-                </p>
-                <h3 class="comments__name">Lorena Riquelme</h3>
-                <span class="comments__region">Bio-Bio, Chile</span>
+        
+        <section class="wrapper-comments">
+            <div class="title">
+                <h2 class="comments__title">Lo que dicen nuestras clientas</h2>
             </div>
-            <a class="btn btn--outlined">Dejar comentario</a>
-        </article>
+            <div class="comments">
+                <div class="opinions">
+                    <span class="material-symbols-outlined comments__icon">format_quote</span>
+                    <p class="comments__Text">
+                        "Nunca pensé encontrar esta calidad a este precio. El bolso llegó con un packaging exquisito, me sentí abriendo un regalo de mí para mí. Definitivamente repetiré."
+                    </p>
+                    <h3 class="comments__name">Sofía Vergara</h3>
+                    <span class="comments__region">Santiago, Chile</span>
+                </div>
+                <div class="opinions">
+                    <span class="material-symbols-outlined comments__icon">format_quote</span>
+                    <p class="comments__Text">
+                        "La atención en el Live Shopping es increíble. Poder ver cómo lucen los zapatos en movimiento me dio la seguridad para comprar. Son comodísimos."
+                    </p>
+                    <h3 class="comments__name">Valentina M.</h3>
+                    <span class="comments__region">Concepción, Chile</span>
+                </div>
+                <div class="opinions">
+                    <span class="material-symbols-outlined comments__icon">format_quote</span>
+                    <p class="comments__Text">
+                        "Karia entendió todo. Moda accesible pero con esa vibra de exclusividad que buscaba. Los accesorios levantan cualquier outfit básico."
+                    </p>
+                    <h3 class="comments__name">Isidora Paz</h3>
+                    <span class="comments__region">Viña del Mar, Chile</span>
+                </div>
+                
+                <div class="btn-container">
+                    <a href="#" class="btn btn--outlined">Ver más historias</a>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
-        <img src="https://www.zarla.com/images/zarla-mundo-chic-1x1-2400x2400-20210603-xbfv8xjqgwwwq6vww7kd.png?crop=1:1,smart&width=250&dpr=2" class="footer__img">
+        <diV class="footer__main">
+            <img src="https://www.zarla.com/images/zarla-mundo-chic-1x1-2400x2400-20210603-xbfv8xjqgwwwq6vww7kd.png?crop=1:1,smart&width=250&dpr=2" class="footer__img" alt="Logo Footer Karia">
         <h2 class="footer__title">KARIA</h2>
+        </diV>
+        
         <ul class="footer__list">
-            <li class="footer__item">Bolsos</li>
-            <li class="footer__item">Zapatos</li>
-            <li class="footer__item">Accesorios</li>
+            <li class="footer__item">Colección 2025</li>
+            <li class="footer__item">Sustentabilidad</li>
+            <li class="footer__item">Contacto</li>
         </ul>
     </footer>
 </body>

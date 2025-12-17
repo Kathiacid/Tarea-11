@@ -1,0 +1,43 @@
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: center;
+    margin-top: 30px;
+
+    &:active {
+        transform: scale(0.96);
+    }
+
+    &--solid {
+        background: linear-gradient(135deg, $green, rgb(114, 161, 69));
+        color: $yellow-pastel;
+        border: none;
+
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    &--outlined {
+        background: transparent;
+        color: $green;
+        border: 3px solid $green;
+        box-shadow: none;
+
+        &:hover {
+            background: $green;
+            color: $yellow-pastel;
+            box-shadow: 0 5px 15px rgba($green, 0.3);
+            transform: translateY(-3px);
+        }
+    }
+}
